@@ -3,16 +3,21 @@
 <html>
     <head>
         <title>Quiz para programadores</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
         <meta name="description" content="Um quiz interativo para testar seus conhecimentos">
         <link rel="stylesheet" href="style.css">
         <style>
             input[type="text"], input[type="file"], input[type="email"], input[type="comments"], option{
                 width: 100%;
-                height: 30px;
+                height: 5%;
                 border: 2px solid blueviolet;
-                padding: 5px;
-                border-radius: 5px;
+                padding: 0.5%;
+                border-radius: 1%;
                 background-color: transparent;
+            }
+            h1 {
+                font-size: 200%;
             }
         </style>
     </head>
@@ -108,9 +113,7 @@
             <section>
                 <h2>&gt Pergunta 8: Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
                 <figure>
-                    <img src="./assets/logo.png">
-                    <img src="./assets/9logo.webp">
-                    <img src="./assets/8logo.png">  
+                    <img src="./assets/8logo.png"> 
                 </figure>
                 <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta">
             </section>
@@ -201,10 +204,13 @@
                     <form>
                         <label for="name">Nome</label><br>
                         <input type="text" id="name" name="name"><br>
+                        
                         <label for="email">Email</label> <br>
                         <input type="text" id="email" name="email"><br>
+
                         <label for="comentarios">Comentários</label><br>
-                        <input type="text" id="email" name="email"><br>
+                        <input type="text" id="comments" name="comments"><br>
+
                         <button onclick="alert('Feedback enviado')">Enviar</button>
                     </form>
                 </fieldset>
@@ -218,4 +224,5 @@
             </p>
         </footer>
     </body>
+
 </html>
